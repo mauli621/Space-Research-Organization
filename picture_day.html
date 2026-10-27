@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Astronomy Picture of the Day</title>
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/picture_day.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main class="apod-page">
+      <header class="apod-header">
+        <h1 class="apod-title">Astronomy Picture of the Day</h1>
+        <p class="apod-subtitle">
+          A new image or video of our universe from NASA, with an explanation by
+          a professional astronomer.
+        </p>
+      </header>
+
+      <div class="apod-controls">
+        <button class="apod-button" id="prev" type="button">
+          Previous day
+        </button>
+        <input
+          class="apod-date"
+          id="date"
+          type="date"
+          aria-label="Choose a date"
+        />
+        <button class="apod-button" id="next" type="button">Next day</button>
+        <button class="apod-button" id="latest" type="button">Latest</button>
+        <button class="apod-button" id="random" type="button">Random</button>
+      </div>
+
+      <p class="apod-status" id="status" role="status"></p>
+
+      <article class="apod-card" id="card" hidden>
+        <div class="apod-media" id="media"></div>
+        <div class="apod-body">
+          <h2 class="apod-name" id="name"></h2>
+          <p class="apod-meta">
+            <span id="picture-date"></span>
+            <span id="credit"></span>
+          </p>
+          <p class="apod-text" id="text"></p>
+          <a
+            class="apod-link"
+            id="hd-link"
+            href="#"
+            target="_blank"
+            rel="noopener"
+            hidden
+            >View full resolution</a
+          >
+        </div>
+      </article>
+    </main>
+    <div id="footer"></div>
+
+    <script src="./JS/picture_day.js"></script>
+    <script src="./JS/components.js"></script>
+  </body>
+</html>

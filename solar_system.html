@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Solar System</title>
+    <link rel="stylesheet" href="./css/solar_system.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main class="page">
+      <h1 class="title">The Solar System</h1>
+      <p class="subtitle">
+        Eight planets circle the Sun. Select a planet to learn about it.
+      </p>
+
+      <div class="system" id="system">
+        <div class="sun"></div>
+      </div>
+
+      <div class="controls">
+        <button class="button" id="toggle" type="button">Pause orbits</button>
+      </div>
+
+      <section class="info" id="info" aria-live="polite">
+        <h2 class="info-name" id="name"></h2>
+        <p class="info-text" id="text"></p>
+        <dl class="facts">
+          <div class="fact">
+            <dt class="fact-label">Distance from Sun</dt>
+            <dd class="fact-value" id="distance"></dd>
+          </div>
+          <div class="fact">
+            <dt class="fact-label">Length of year</dt>
+            <dd class="fact-value" id="year"></dd>
+          </div>
+          <div class="fact">
+            <dt class="fact-label">Moons</dt>
+            <dd class="fact-value" id="moons"></dd>
+          </div>
+          <div class="fact">
+            <dt class="fact-label">Diameter</dt>
+            <dd class="fact-value" id="size"></dd>
+          </div>
+        </dl>
+      </section>
+    </main>
+    <div id="footer"></div>
+    <script src="JS/solar_system.js"></script>
+    <script src="JS/components.js"></script>
+  </body>
+</html>

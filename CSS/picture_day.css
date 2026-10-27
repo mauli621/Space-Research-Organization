@@ -1,0 +1,120 @@
+.apod-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 24px 16px 56px;
+}
+.apod-title {
+  font-size: clamp(2rem, 6vw, 3rem);
+  margin: 0 0 4px;
+  font-weight: 400;
+}
+.apod-subtitle {
+  margin: 0 0 24px;
+  color: #a9b0dd;
+  max-width: 60ch;
+}
+
+.apod-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+.apod-button,
+.apod-date {
+  font: inherit;
+  color: #eef0ff;
+  background: #182050;
+  border: 1px solid #2c3772;
+  border-radius: 6px;
+  padding: 8px 16px;
+}
+.apod-button {
+  cursor: pointer;
+}
+.apod-button:hover:not(:disabled) {
+  border-color: #a9b0dd;
+}
+.apod-button:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+.apod-button:focus-visible,
+.apod-date:focus-visible,
+.apod-link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+.apod-date {
+  color-scheme: dark;
+}
+
+.apod-status {
+  min-height: 1.6em;
+  margin: 0 0 12px;
+  color: #a9b0dd;
+}
+.apod-status.apod-error {
+  color: #ff8a80;
+}
+
+.apod-card {
+  background: #182050;
+  border: 1px solid #2c3772;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.apod-card[hidden] {
+  display: none;
+}
+.apod-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #060a22;
+}
+.apod-image {
+  display: block;
+  width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+}
+.apod-video {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+}
+.apod-other {
+  padding: 40px 16px;
+  text-align: center;
+}
+
+.apod-body {
+  padding: 20px 22px 24px;
+}
+.apod-name {
+  margin: 0 0 4px;
+  font-size: 1.7rem;
+  font-weight: 400;
+}
+.apod-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 16px;
+  margin: 0 0 14px;
+  color: #a9b0dd;
+  font-size: 0.92rem;
+}
+.apod-text {
+  margin: 0 0 16px;
+  max-width: 70ch;
+  line-height: 1.7;
+}
+.apod-link {
+  color: #ffb629;
+}
+.apod-link[hidden] {
+  display: none;
+}

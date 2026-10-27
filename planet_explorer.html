@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <title>Planet Explorer</title>
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/planets_explorer.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <main class="p-page">
+      <header class="p-header">
+        <h1 class="p-title">Planet Explorer</h1>
+        <p class="p-subtitle">
+          Meet all eight planets of our solar system, from the Sun outward.
+        </p>
+      </header>
+
+      <div class="p-filters" id="filters">
+        <button class="p-button p-active" type="button" data-type="all">
+          All planets
+        </button>
+        <button class="p-button" type="button" data-type="Rocky">Rocky</button>
+        <button class="p-button" type="button" data-type="Gas giant">
+          Gas giants
+        </button>
+        <button class="p-button" type="button" data-type="Ice giant">
+          Ice giants
+        </button>
+      </div>
+
+      <section class="p-grid" id="grid"></section>
+    </main>
+    <div id="footer"></div>
+
+    <script src="./JS/planets_explorer.js"></script>
+    <script src="./JS/components.js"></script>
+  </body>
+</html>
