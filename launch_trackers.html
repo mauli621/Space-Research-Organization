@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Launch Tracker</title>
+
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/launch_trackers.css" />
+</head>
+<body>
+
+   <div id="header"></div>
+
+    <main class="launch-page">
+
+        <!-- Page Heading -->
+        <section class="launch-header">
+            <h1>Launch Tracker</h1>
+            <p>
+                Track space missions, explore upcoming launches,
+                and discover the latest rocket launch activities.
+            </p>
+        </section>
+
+        <!-- Tracker Summary -->
+        <section class="launch-stats">
+            <div class="stat-card">
+                <span>Upcoming Launches</span>
+                <h2 id="upcoming-count">3</h2>
+            </div>
+
+            <div class="stat-card">
+                <span>Space Agencies</span>
+                <h2>3</h2>
+            </div>
+
+            <div class="stat-card">
+                <span>Recently Completed</span>
+                <h2>3</h2>
+            </div>
+        </section>
+
+        <!-- Upcoming Launches -->
+        <section class="launch-section">
+            <div class="section-heading">
+                <div>
+                    <h2>Upcoming Launches</h2>
+                    <p>Explore scheduled missions</p>
+                </div>
+
+                <select id="agency-filter" aria-label="Filter by space agency">
+                    <option value="all">All Agencies</option>
+                    <option value="ISRO">ISRO</option>
+                    <option value="NASA">NASA</option>
+                    <option value="SpaceX">SpaceX</option>
+                </select>
+            </div>
+
+            <div class="launch-grid" id="upcoming-grid">
+
+                <!-- Demo launch 1 -->
+                <article class="launch-card"
+                         data-agency="ISRO"
+                         data-date="2026-11-12T09:00:00+05:30">
+
+                    <div class="launch-card-top">
+                        <span class="agency-name">ISRO</span>
+                        <span class="launch-status">Scheduled · Demo</span>
+                    </div>
+
+                    <h3>Earth Observation Mission</h3>
+                    <p class="rocket-name">Launch Vehicle: PSLV</p>
+
+                    <div class="launch-info">
+                        <p>
+                            <span>Launch Date</span>
+                            <strong>12 Nov 2026</strong>
+                        </p>
+                        <p>
+                            <span>Launch Site</span>
+                            <strong>Sriharikota, India</strong>
+                        </p>
+                    </div>
+
+                    <div class="countdown"
+                         data-countdown="2026-11-12T09:00:00+05:30">
+                        Calculating countdown...
+                    </div>
+
+                    <a href="https://www.isro.gov.in/"
+                       target="_blank" rel="noopener noreferrer">
+                        Mission Details →
+                    </a>
+                </article>
+
+                <!-- Demo launch 2 -->
+                <article class="launch-card"
+                         data-agency="NASA"
+                         data-date="2026-11-18T10:00:00Z">
+
+                    <div class="launch-card-top">
+                        <span class="agency-name">NASA</span>
+                        <span class="launch-status">Scheduled · Demo</span>
+                    </div>
+
+                    <h3>Lunar Exploration Mission</h3>
+                    <p class="rocket-name">Launch Vehicle: SLS</p>
+
+                    <div class="launch-info">
+                        <p>
+                            <span>Launch Date</span>
+                            <strong>18 Nov 2026</strong>
+                        </p>
+                        <p>
+                            <span>Launch Site</span>
+                            <strong>Kennedy Space Center, USA</strong>
+                        </p>
+                    </div>
+
+                    <div class="countdown"
+                         data-countdown="2026-11-18T10:00:00Z">
+                        Calculating countdown...
+                    </div>
+
+                    <a href="https://www.nasa.gov/missions/"
+                       target="_blank" rel="noopener noreferrer">
+                        Mission Details →
+                    </a>
+                </article>
+
+                <!-- Demo launch 3 -->
+                <article class="launch-card"
+                         data-agency="SpaceX"
+                         data-date="2026-11-25T12:00:00Z">
+
+                    <div class="launch-card-top">
+                        <span class="agency-name">SpaceX</span>
+                        <span class="launch-status">Scheduled · Demo</span>
+                    </div>
+
+                    <h3>Starlink Satellite Mission</h3>
+                    <p class="rocket-name">Launch Vehicle: Falcon 9</p>
+
+                    <div class="launch-info">
+                        <p>
+                            <span>Launch Date</span>
+                            <strong>25 Nov 2026</strong>
+                        </p>
+                        <p>
+                            <span>Launch Site</span>
+                            <strong>Cape Canaveral, USA</strong>
+                        </p>
+                    </div>
+
+                    <div class="countdown"
+                         data-countdown="2026-11-25T12:00:00Z">
+                        Calculating countdown...
+                    </div>
+
+                    <a href="https://www.spacex.com/launches/"
+                       target="_blank" rel="noopener noreferrer">
+                        Mission Details →
+                    </a>
+                </article>
+
+            </div>
+
+            <p id="no-results" hidden>
+                No launches found for this agency.
+            </p>
+        </section>
+
+        <!-- Recent Launches -->
+        <section class="launch-section recent-section">
+            <div class="section-heading">
+                <div>
+                    <h2>Recent Launches</h2>
+                    <p>Examples of completed space missions</p>
+                </div>
+            </div>
+
+            <div class="recent-list">
+
+                <div class="recent-item">
+                    <div>
+                        <h3>Chandrayaan-3</h3>
+                        <p>ISRO · Lunar Mission</p>
+                    </div>
+                    <span class="completed">Completed</span>
+                    <strong>14 Aug 2023</strong>
+                </div>
+
+                <div class="recent-item">
+                    <div>
+                        <h3>Europa Clipper</h3>
+                        <p>NASA · Planetary Exploration</p>
+                    </div>
+                    <span class="completed">Launched</span>
+                    <strong>14 Oct 2024</strong>
+                </div>
+
+                <div class="recent-item">
+                    <div>
+                        <h3>DART Mission</h3>
+                        <p>NASA · Planetary Defense</p>
+                    </div>
+                    <span class="completed">Completed</span>
+                    <strong>24 Nov 2021</strong>
+                </div>
+
+            </div>
+        </section>
+
+        <p class="launch-note">
+            Demo schedules are for website preview only.
+            Check the official agency websites for confirmed launch dates and status.
+        </p>
+
+    </main>
+
+    <!-- Existing Footer -->
+    <div id="footer"></div>
+
+    <script src="./JS/components.js"></script>
+
+    <script>
+        // Filter launches by space agency
+        const agencyFilter = document.getElementById("agency-filter");
+        const launchCards = document.querySelectorAll(".launch-card");
+        const noResults = document.getElementById("no-results");
+        const upcomingCount = document.getElementById("upcoming-count");
+
+        function filterLaunches() {
+            const selectedAgency = agencyFilter.value;
+            let visibleCount = 0;
+
+            launchCards.forEach(card => {
+                const matches =
+                    selectedAgency === "all" ||
+                    card.dataset.agency === selectedAgency;
+
+                card.hidden = !matches;
+
+                if (matches) {
+                    visibleCount++;
+                }
+            });
+
+            noResults.hidden = visibleCount !== 0;
+            upcomingCount.textContent = visibleCount;
+        }
+
+        agencyFilter.addEventListener("change", filterLaunches);
+
+        // Countdown timer
+        function updateCountdowns() {
+            document.querySelectorAll("[data-countdown]").forEach(element => {
+                const launchDate = new Date(
+                    element.dataset.countdown
+                ).getTime();
+
+                const difference = launchDate - Date.now();
+
+                if (difference <= 0) {
+                    element.textContent = "Scheduled time reached";
+                    return;
+                }
+
+                const days = Math.floor(
+                    difference / (1000 * 60 * 60 * 24)
+                );
+
+                const hours = Math.floor(
+                    (difference / (1000 * 60 * 60)) % 24
+                );
+
+                const minutes = Math.floor(
+                    (difference / (1000 * 60)) % 60
+                );
+
+                const seconds = Math.floor(
+                    (difference / 1000) % 60
+                );
+
+                element.textContent =
+                    `T - ${days}d ${hours}h ${minutes}m ${seconds}s`;
+            });
+        }
+
+        updateCountdowns();
+        setInterval(updateCountdowns, 1000);
+    </script>
+
+</body>
+</html>

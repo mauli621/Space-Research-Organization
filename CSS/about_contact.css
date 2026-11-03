@@ -1,0 +1,228 @@
+/* About and Contact Page */
+
+.about-hero {
+  min-height: 330px;
+  padding: 60px 8%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(rgba(5, 11, 27, 0.65), rgba(5, 11, 27, 0.95))
+    center/cover;
+}
+
+.about-hero h1 {
+  font-size: 44px;
+  margin-bottom: 15px;
+}
+
+.about-hero h1 span {
+  color: #43d9ff;
+}
+
+.about-hero p {
+  max-width: 650px;
+  color: #d3def5;
+  margin-bottom: 25px;
+}
+
+.about-button {
+  display: inline-block;
+  padding: 11px 24px;
+  background: #43d9ff;
+  color: #061020;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.about-button:hover {
+  background: #ffffff;
+}
+
+/* About Section */
+
+.about-section,
+.about-contact-section {
+  padding: 60px 8%;
+  scroll-margin-top: 20px;
+}
+
+.about-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-heading h2 {
+  color: #43d9ff;
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.about-heading p {
+  color: #aab9d6;
+}
+
+.about-description {
+  max-width: 850px;
+  margin: auto;
+  text-align: center;
+  color: #c5d2eb;
+}
+
+.about-description p + p {
+  margin-top: 15px;
+}
+
+/* About Cards */
+
+.about-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 22px;
+  margin-top: 35px;
+}
+
+.about-card {
+  padding: 25px;
+  background: #0c1833;
+  border: 1px solid #1d3158;
+  border-radius: 10px;
+  transition:
+    transform 0.3s,
+    border-color 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  border-color: #43d9ff;
+}
+
+.about-card h3 {
+  color: #43d9ff;
+  margin-bottom: 10px;
+}
+
+.about-card p {
+  color: #b8c6df;
+  font-size: 14px;
+}
+
+/* Contact Layout */
+
+.about-contact-container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 30px;
+  align-items: start;
+}
+
+.about-contact-info,
+.about-contact-form {
+  min-width: 0;
+  padding: 28px;
+  background: #0c1833;
+  border: 1px solid #1d3158;
+  border-radius: 10px;
+}
+
+.about-contact-info h3,
+.about-contact-form h3 {
+  color: #43d9ff;
+  margin-bottom: 18px;
+}
+
+.about-contact-info p {
+  color: #c5d2eb;
+  margin-bottom: 15px;
+  overflow-wrap: anywhere;
+}
+
+/* Contact Form */
+
+.about-contact-form label {
+  display: block;
+  margin: 12px 0 5px;
+  color: #dce8ff;
+}
+
+.about-contact-form input,
+.about-contact-form select,
+.about-contact-form textarea {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background: #050b1b;
+  color: #ffffff;
+  border: 1px solid #30456b;
+  border-radius: 5px;
+  font: inherit;
+}
+
+.about-contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.about-contact-form input:focus,
+.about-contact-form select:focus,
+.about-contact-form textarea:focus {
+  outline: 1px solid #43d9ff;
+  border-color: #43d9ff;
+}
+
+.about-contact-form .about-button {
+  width: 100%;
+  margin-top: 18px;
+}
+
+#about-form-message {
+  margin-top: 15px;
+  color: #43d9ff;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .about-hero h1 {
+    font-size: 34px;
+  }
+
+  .about-cards,
+  .about-contact-container {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section,
+  .about-contact-section {
+    padding: 45px 6%;
+  }
+
+  .about-heading h2 {
+    font-size: 27px;
+  }
+
+  .about-contact-info,
+  .about-contact-form {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 400px) {
+  .about-hero h1 {
+    font-size: 29px;
+  }
+
+  .about-hero {
+    padding: 45px 6%;
+  }
+}

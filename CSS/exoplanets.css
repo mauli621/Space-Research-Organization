@@ -1,0 +1,550 @@
+/* EXOPLANETS PAGE */
+
+/* HERO BANNER */
+
+.exo-hero {
+  min-height: 340px;
+  display: flex;
+  align-items: center;
+  padding: 45px 8%;
+  position: relative;
+  overflow: hidden;
+  color: #f5f8ff;
+  background:
+    linear-gradient(90deg, #020b18 8%, #020b18dd 50%, #020b1840),
+    url("../Images/sky.jpg") center / cover no-repeat;
+}
+
+.exo-hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.exo-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 600px;
+}
+
+.exo-small-title {
+  color: #00d9f5;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.exo-hero h1 {
+  margin: 16px 0;
+  color: #f5f8ff;
+  font-size: clamp(36px, 5vw, 54px);
+  line-height: 1.2;
+}
+
+.exo-hero h1 span,
+.exo-about-content h2 span,
+.exo-section-title h2 span,
+.exo-video-content h2 span {
+  color: #00d9f5;
+}
+
+.exo-hero-text {
+  max-width: 550px;
+  color: #c7d5e9;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.exo-hero-note {
+  margin-top: 25px;
+  color: #9aafce;
+  font-size: 11px;
+  letter-spacing: 2px;
+}
+
+/* BUTTONS */
+
+.exo-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.exo-button {
+  display: inline-block;
+  padding: 12px 22px;
+  border: 1px solid #00d9f5;
+  border-radius: 25px;
+  font: inherit;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.exo-button-blue {
+  background: #00cbe8;
+  color: #00101c;
+}
+
+.exo-button-outline {
+  background: transparent;
+  color: #f5f8ff;
+}
+
+.exo-button:hover {
+  background: #72efff;
+  color: #00101c;
+  transform: translateY(-2px);
+}
+
+/* COMMON SECTIONS */
+
+.exo-section {
+  padding: 55px 8%;
+  color: #f5f8ff;
+  background: #04101f;
+}
+
+.exo-about-content h2,
+.exo-section-title h2,
+.exo-video-content h2 {
+  margin: 14px 0;
+  font-size: 30px;
+  line-height: 1.3;
+}
+
+.exo-about-content > p:not(.exo-small-title) {
+  margin: 16px 0;
+  color: #b9c9de;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.exo-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #00d9f5;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.exo-link:hover {
+  color: #ffffff;
+}
+
+/* ABOUT EXOPLANETS */
+
+.exo-about {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 45px;
+}
+
+.exo-about-points {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 28px;
+}
+
+.exo-about-points > div {
+  padding: 18px;
+  border: 1px solid #16344f;
+  border-radius: 10px;
+  background: #071729;
+}
+
+.exo-point-icon {
+  color: #00d9f5;
+  font-size: 22px;
+}
+
+.exo-about-points h3 {
+  margin: 12px 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.exo-about-points p {
+  color: #b9c9de;
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.exo-about-image {
+  position: relative;
+  min-width: 0;
+}
+
+.exo-about-image img {
+  display: block;
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.exo-image-text {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  left: 12px;
+  padding: 13px;
+  background: #020b18dd;
+  color: #00d9f5;
+  font-size: 11px;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 1.7;
+}
+
+/* FEATURED EXOPLANETS */
+
+.exo-planets {
+  background: #020d1a;
+}
+
+.exo-section-title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.exo-section-title > p:last-child {
+  color: #b9c9de;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* PLANET FILTERS */
+
+.exo-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+  margin-bottom: 35px;
+}
+
+.exo-filter {
+  padding: 10px 18px;
+  border: 1px solid #16344f;
+  border-radius: 25px;
+  background: #071729;
+  color: #c7d5e9;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.exo-filter:hover,
+.exo-filter.active {
+  background: #00cbe8;
+  border-color: #00d9f5;
+  color: #00101c;
+}
+
+/* FOUR CARDS IN ONE ROW */
+
+.exo-planet-list {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.exo-planet-card {
+  min-width: 0;
+  overflow: hidden;
+  border: 1px solid #16344f;
+  border-radius: 12px;
+  background: #071729;
+  transition:
+    transform 0.3s,
+    border-color 0.3s;
+}
+
+.exo-planet-card:hover {
+  transform: translateY(-5px);
+  border-color: #00d9f5;
+}
+
+.exo-planet-image {
+  position: relative;
+  height: 165px;
+  overflow: hidden;
+  background: #0c1833;
+}
+
+.exo-planet-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.exo-planet-card:hover .exo-planet-image img {
+  transform: scale(1.05);
+}
+
+.exo-planet-label {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  padding: 6px 9px;
+  border-radius: 4px;
+  background: #00cbe8;
+  color: #00101c;
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.exo-planet-info {
+  padding: 20px;
+}
+
+.exo-planet-info h3 {
+  margin: 0 0 12px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.exo-distance {
+  margin-bottom: 14px;
+  color: #00d9f5;
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+.exo-planet-info > p:not(.exo-distance) {
+  color: #b9c9de;
+  font-size: 12px;
+  line-height: 1.9;
+}
+
+.exo-planet-info .exo-link {
+  margin-top: 14px;
+  font-size: 12px;
+}
+
+.exo-image-note {
+  margin-top: 30px;
+  color: #9aafce;
+  font-size: 12px;
+  line-height: 1.8;
+  text-align: center;
+}
+
+/* SPACE VIDEO BANNER */
+
+.exo-video-section {
+  position: relative;
+  min-height: 290px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  padding: 55px 8%;
+  text-align: center;
+  background: #020b18;
+}
+
+.exo-video-background,
+.exo-video-dark {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.exo-video-background {
+  object-fit: cover;
+}
+
+.exo-video-dark {
+  background: #020b18c9;
+}
+
+.exo-video-content {
+  position: relative;
+  z-index: 1;
+  max-width: 650px;
+}
+
+.exo-video-content > p:not(.exo-small-title) {
+  margin: 18px 0 26px;
+  color: #c7d5e9;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+/* VIDEO POPUP */
+
+.exo-video-popup {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: #000000e8;
+}
+
+.exo-video-popup.active {
+  display: flex;
+}
+
+.exo-video-box {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  padding: 16px;
+  border: 1px solid #16344f;
+  border-radius: 10px;
+  background: #071729;
+}
+
+.exo-video-box video {
+  display: block;
+  width: 100%;
+  max-height: 75vh;
+  background: #000000;
+}
+
+.exo-close-video {
+  position: absolute;
+  top: -13px;
+  right: -13px;
+  z-index: 2;
+  width: 34px;
+  height: 34px;
+  border: none;
+  border-radius: 50%;
+  background: #00d9f5;
+  color: #00101c;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+/* TABLET */
+
+@media (max-width: 1000px) {
+  .exo-about {
+    gap: 30px;
+  }
+
+  .exo-about-points {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .exo-planet-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+  }
+
+  .exo-planet-image {
+    height: 180px;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 650px) {
+  .exo-hero {
+    min-height: 310px;
+    padding: 40px 6%;
+  }
+
+  .exo-hero h1 {
+    font-size: 36px;
+  }
+
+  .exo-hero-text {
+    font-size: 13px;
+  }
+
+  .exo-section {
+    padding: 42px 6%;
+  }
+
+  .exo-about {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .exo-about-points {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .exo-about-image img {
+    height: 240px;
+  }
+
+  .exo-planet-list {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .exo-planet-image {
+    height: 210px;
+  }
+
+  .exo-planet-info {
+    padding: 20px;
+  }
+
+  .exo-about-content h2,
+  .exo-section-title h2,
+  .exo-video-content h2 {
+    font-size: 26px;
+  }
+
+  .exo-filters {
+    gap: 10px;
+    margin-bottom: 28px;
+  }
+
+  .exo-filter {
+    padding: 9px 14px;
+  }
+
+  .exo-video-section {
+    min-height: 250px;
+    padding: 42px 6%;
+  }
+
+  .exo-video-box {
+    padding: 10px;
+  }
+
+  .exo-close-video {
+    top: -10px;
+    right: -8px;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+  .exo-planet-card,
+  .exo-planet-image img,
+  .exo-button,
+  .exo-filter {
+    transition: none;
+  }
+
+  .exo-planet-card:hover,
+  .exo-button:hover {
+    transform: none;
+  }
+}

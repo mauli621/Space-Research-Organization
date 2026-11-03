@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satellites</title>
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/satellites.css" />
+</head>
+
+<body>
+    <div id="header"></div>
+
+    <main class="sat-page">
+
+        <!-- Page Heading -->
+        <section class="sat-header">
+            <h1>Explore Satellites</h1>
+            <p>
+                Discover satellites observing Earth, exploring the universe,
+                studying our Sun, and connecting people around the world.
+            </p>
+        </section>
+
+        <!-- Satellite Categories -->
+        <section class="sat-section">
+            <h2>Our Satellite Collection</h2>
+            <p class="sat-section-sub">
+                Explore important satellites and their contributions
+                to science, communication, and Earth observation.
+            </p>
+
+
+            <div class="sat-filters">
+                <button class="sat-filter active" data-filter="all">
+                    All Satellites
+                </button>
+                <button class="sat-filter" data-filter="Communication">
+                    Communication
+                </button>
+                <button class="sat-filter" data-filter="Navigation">
+                    Navigation
+                </button>
+                <button class="sat-filter" data-filter="Earth Observation">
+                    Weather & Earth Observation
+                </button>
+                <button class="sat-filter" data-filter="Space Science">
+                    Space Science
+                </button>
+            </div>
+
+
+            <div class="sat-grid" id="sat-grid">
+
+                <!-- 1. INSAT-3DS -->
+                <article class="sat-card" data-category="Earth Observation">
+                    <img class="sat-img" src="./Images/insat3ds.jpg" alt="INSAT-3DS weather satellite">
+
+                    <div class="sat-info">
+                        <p class="sat-agency">ISRO · INDIA</p>
+                        <h3>INSAT-3DS</h3>
+                        <p class="sat-type">Weather Satellite</p>
+
+                        <p class="sat-desc">
+                            Monitors weather systems, atmospheric conditions,
+                            and ocean-related conditions to support weather
+                            forecasting and disaster warnings.
+                        </p>
+
+                        <div class="sat-details">
+                            <div class="sat-detail">
+                                <span>Launch Date</span>
+                                <strong>17 Feb 2024</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Launch Vehicle</span>
+                                <strong>GSLV-F14</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Orbit</span>
+                                <strong>Geostationary</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Purpose</span>
+                                <strong>Weather Forecasting</strong>
+                            </div>
+                        </div>
+
+                        <a class="sat-link" href="https://www.isro.gov.in/" target="_blank" rel="noopener noreferrer">
+                            Explore Satellite →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 2. EOS-06 -->
+                <article class="sat-card" data-category="Earth Observation">
+                    <img class="sat-img" src="./Images/eos06.jpg" alt="EOS-06 Earth observation satellite">
+
+                    <div class="sat-info">
+                        <p class="sat-agency">ISRO · INDIA</p>
+                        <h3>EOS-06</h3>
+                        <p class="sat-type">Earth Observation</p>
+
+                        <p class="sat-desc">
+                            Studies ocean colour, sea surface temperature,
+                            and ocean winds to support ocean forecasting,
+                            climate research, and marine applications.
+                        </p>
+
+                        <div class="sat-details">
+                            <div class="sat-detail">
+                                <span>Launch Date</span>
+                                <strong>26 Nov 2022</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Launch Vehicle</span>
+                                <strong>PSLV-C54</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Orbit</span>
+                                <strong>Polar Orbit</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Purpose</span>
+                                <strong>Ocean Monitoring</strong>
+                            </div>
+                        </div>
+
+                        <a class="sat-link" href="https://www.isro.gov.in/" target="_blank" rel="noopener noreferrer">
+                            Explore Satellite →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 3. Cartosat-3 -->
+                <article class="sat-card" data-category="Earth Observation">
+                    <img class="sat-img" src="./Images/cartosat3.jpg" alt="Cartosat-3 imaging satellite">
+
+                    <div class="sat-info">
+                        <p class="sat-agency">ISRO · INDIA</p>
+                        <h3>Cartosat-3</h3>
+                        <p class="sat-type">Earth Imaging</p>
+
+                        <p class="sat-desc">
+                            Provides high-resolution images of Earth's
+                            surface for mapping, urban planning,
+                            infrastructure development, and land management.
+                        </p>
+
+                        <div class="sat-details">
+                            <div class="sat-detail">
+                                <span>Launch Date</span>
+                                <strong>27 Nov 2019</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Launch Vehicle</span>
+                                <strong>PSLV-C47</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Orbit</span>
+                                <strong>Low Earth Orbit</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Purpose</span>
+                                <strong>High-Resolution Imaging</strong>
+                            </div>
+                        </div>
+
+                        <a class="sat-link" href="https://www.isro.gov.in/" target="_blank" rel="noopener noreferrer">
+                            Explore Satellite →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 4. Hubble Space Telescope -->
+                <article class="sat-card" data-category="Space Science">
+                    <img class="sat-img" src="./Images/hubble.jpg" alt="Hubble Space Telescope">
+
+                    <div class="sat-info">
+                        <p class="sat-agency">NASA · USA</p>
+                        <h3>Hubble Space Telescope</h3>
+                        <p class="sat-type">Space Observatory</p>
+
+                        <p class="sat-desc">
+                            Observes stars, galaxies, nebulae, and distant
+                            objects to help scientists understand the
+                            history and evolution of the universe.
+                        </p>
+
+                        <div class="sat-details">
+                            <div class="sat-detail">
+                                <span>Launch Date</span>
+                                <strong>24 Apr 1990</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Launch Vehicle</span>
+                                <strong>Space Shuttle Discovery</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Orbit</span>
+                                <strong>Low Earth Orbit</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Purpose</span>
+                                <strong>Astronomy</strong>
+                            </div>
+                        </div>
+
+                        <a class="sat-link" href="https://science.nasa.gov/mission/hubble/" target="_blank"
+                            rel="noopener noreferrer">
+                            Explore Satellite →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 5. James Webb Space Telescope -->
+                <article class="sat-card" data-category="Space Science">
+                    <img class="sat-img" src="./Images/jwst.jpg" alt="James Webb Space Telescope">
+
+                    <div class="sat-info">
+                        <p class="sat-agency">NASA · ESA · CSA</p>
+                        <h3>James Webb Telescope</h3>
+                        <p class="sat-type">Infrared Observatory</p>
+
+                        <p class="sat-desc">
+                            Studies the early universe, distant galaxies,
+                            star formation, and the atmospheres of planets
+                            beyond our Solar System.
+                        </p>
+
+                        <div class="sat-details">
+                            <div class="sat-detail">
+                                <span>Launch Date</span>
+                                <strong>25 Dec 2021</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Launch Vehicle</span>
+                                <strong>Ariane 5</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Orbit</span>
+                                <strong>Sun-Earth L2</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Purpose</span>
+                                <strong>Infrared Astronomy</strong>
+                            </div>
+                        </div>
+
+                        <a class="sat-link" href="https://science.nasa.gov/mission/webb/" target="_blank"
+                            rel="noopener noreferrer">
+                            Explore Satellite →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 6. Sentinel-2A -->
+                <article class="sat-card" data-category="Earth Observation">
+                    <img class="sat-img" src="./Images/sentinel2.jpg" alt="Sentinel-2 Earth observation satellite">
+
+                    <div class="sat-info">
+                        <p class="sat-agency">ESA · EUROPE</p>
+                        <h3>Sentinel-2A</h3>
+                        <p class="sat-type">Earth Monitoring</p>
+
+                        <p class="sat-desc">
+                            Captures multispectral images of Earth's land
+                            and coastal areas for agriculture, forestry,
+                            environmental monitoring, and disaster response.
+                        </p>
+
+                        <div class="sat-details">
+                            <div class="sat-detail">
+                                <span>Launch Date</span>
+                                <strong>23 Jun 2015</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Launch Vehicle</span>
+                                <strong>Vega</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Orbit</span>
+                                <strong>Sun-Synchronous</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Purpose</span>
+                                <strong>Land Monitoring</strong>
+                            </div>
+                        </div>
+
+                        <a class="sat-link"
+                            href="https://www.esa.int/Applications/Observing_the_Earth/Copernicus/Sentinel-2"
+                            target="_blank" rel="noopener noreferrer">
+                            Explore Satellite →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- 7. Starlink -->
+                <article class="sat-card" data-category="Communication">
+                    <img class="sat-img" src="./Images/starlink.jpg" alt="Starlink communication satellites">
+
+                    <div class="sat-info">
+                        <p class="sat-agency">SPACEX · USA</p>
+                        <h3>Starlink</h3>
+                        <p class="sat-type">Communication Network</p>
+
+                        <p class="sat-desc">
+                            A large constellation of satellites that
+                            provides broadband internet connectivity
+                            to users in many parts of the world.
+                        </p>
+
+                        <div class="sat-details">
+                            <div class="sat-detail">
+                                <span>First Launch</span>
+                                <strong>24 May 2019</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Launch Vehicle</span>
+                                <strong>Falcon 9</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Orbit</span>
+                                <strong>Low Earth Orbit</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Purpose</span>
+                                <strong>Internet Connectivity</strong>
+                            </div>
+                        </div>
+
+                        <a class="sat-link" href="https://www.starlink.com/" target="_blank" rel="noopener noreferrer">
+                            Explore Satellite →
+                        </a>
+                    </div>
+                </article>
+
+
+                <!-- Navigation Satellite: NavIC -->
+                <article class="sat-card" data-category="Navigation">
+                    <img class="sat-img" src="./Images/navic.jpg" alt="NavIC navigation satellite">
+
+                    <div class="sat-info">
+                        <p class="sat-agency">ISRO · INDIA</p>
+                        <h3>NavIC</h3>
+                        <p class="sat-type">Regional Navigation System</p>
+
+                        <p class="sat-desc">
+                            India's independent navigation system provides positioning,
+                            navigation and timing services across India and surrounding
+                            regions for transport, mapping and emergency services.
+                        </p>
+
+                        <div class="sat-details">
+                            <div class="sat-detail">
+                                <span>System</span>
+                                <strong>NavIC</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Orbit</span>
+                                <strong>Geostationary / Geosynchronous</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Purpose</span>
+                                <strong>Positioning</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Coverage</span>
+                                <strong>India & Region</strong>
+                            </div>
+                        </div>
+
+                        <a class="sat-link" href="https://www.isro.gov.in/" target="_blank" rel="noopener noreferrer">
+                            Explore Satellite →
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Navigation Satellite: GPS -->
+                <article class="sat-card" data-category="Navigation">
+                    <img class="sat-img" src="./Images/gps.jpg" alt="GPS navigation satellite">
+
+                    <div class="sat-info">
+                        <p class="sat-agency">UNITED STATES · GPS</p>
+                        <h3>GPS</h3>
+                        <p class="sat-type">Global Navigation System</p>
+
+                        <p class="sat-desc">
+                            The Global Positioning System uses a constellation of
+                            satellites to provide location, navigation and timing
+                            services to users worldwide.
+                        </p>
+
+                        <div class="sat-details">
+                            <div class="sat-detail">
+                                <span>System</span>
+                                <strong>GPS</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Orbit</span>
+                                <strong>Medium Earth Orbit</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Purpose</span>
+                                <strong>Navigation & Timing</strong>
+                            </div>
+                            <div class="sat-detail">
+                                <span>Coverage</span>
+                                <strong>Global</strong>
+                            </div>
+                        </div>
+
+                        <a class="sat-link" href="https://www.gps.gov/" target="_blank" rel="noopener noreferrer">
+                            Explore Satellite →
+                        </a>
+                    </div>
+                </article>
+
+
+            </div>
+
+            <p id="sat-no-results" hidden>
+                No satellites found in this category.
+            </p>
+        </section>
+
+
+        <!-- Satellite Applications -->
+        <section class="sat-learning">
+            <h2>Satellite Applications</h2>
+            <p class="sat-learning-sub">
+                Satellites support essential services and scientific research
+                in everyday life.
+            </p>
+
+            <div class="sat-learning-grid">
+                <article class="sat-learning-card">
+                    <h3>Communication</h3>
+                    <p>
+                        Television broadcasting, satellite internet, telephone
+                        services and communication in remote locations.
+                    </p>
+                </article>
+
+                <article class="sat-learning-card">
+                    <h3>Navigation</h3>
+                    <p>
+                        GPS and NavIC help determine location, plan routes,
+                        synchronize timing and support transport systems.
+                    </p>
+                </article>
+
+                <article class="sat-learning-card">
+                    <h3>Weather & Earth Observation</h3>
+                    <p>
+                        Weather forecasting, cyclone monitoring, agriculture,
+                        forest observation, mapping and disaster management.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Orbital Concepts -->
+        <section class="sat-learning">
+            <h2>Understanding Satellite Orbits</h2>
+            <p class="sat-learning-sub">
+                A satellite's orbit depends on its mission and the services it provides.
+            </p>
+
+            <div class="sat-orbit-list">
+                <article class="sat-orbit-card">
+                    <h3>Low Earth Orbit (LEO)</h3>
+                    <p>
+                        Relatively close to Earth. Used by Earth-imaging satellites,
+                        the International Space Station and many communication
+                        constellations.
+                    </p>
+                </article>
+
+                <article class="sat-orbit-card">
+                    <h3>Medium Earth Orbit (MEO)</h3>
+                    <p>
+                        Higher than LEO. Commonly used by navigation systems
+                        such as GPS.
+                    </p>
+                </article>
+
+                <article class="sat-orbit-card">
+                    <h3>Geostationary Orbit (GEO)</h3>
+                    <p>
+                        At about 35,786 km above the equator, a satellite's orbital
+                        period matches Earth's rotation, making it appear stationary
+                        relative to the ground.
+                    </p>
+                </article>
+
+                <article class="sat-orbit-card">
+                    <h3>Sun-Synchronous Orbit</h3>
+                    <p>
+                        A near-polar orbit that allows satellites to observe
+                        locations under similar local sunlight conditions,
+                        useful for Earth observation.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+
+        <!-- Information Section -->
+        <section class="sat-bottom">
+            <h2>Satellites Connect Our World</h2>
+            <p>
+                From observing Earth to exploring distant galaxies,
+                satellites help us understand our planet and the universe.
+            </p>
+        </section>
+
+    </main>
+    <div id="footer"></div>
+
+    <script src="./JS/components.js"></script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const filterButtons = document.querySelectorAll(".sat-filter");
+            const satelliteCards = document.querySelectorAll(".sat-card");
+            const noResults = document.getElementById("sat-no-results");
+
+            let activeCategory = "all";
+
+            function filterSatellites() {
+                let visibleCount = 0;
+
+                satelliteCards.forEach(function (card) {
+                    const category = card.dataset.category;
+
+                    const matchesCategory =
+                        activeCategory === "all" ||
+                        category === activeCategory;
+
+                    if (matchesCategory) {
+                        card.style.display = "";
+                        visibleCount++;
+                    } else {
+                        card.style.display = "none";
+                    }
+                });
+
+                if (noResults) {
+                    noResults.hidden = visibleCount > 0;
+                }
+            }
+
+            filterButtons.forEach(function (button) {
+                button.addEventListener("click", function () {
+                    activeCategory = button.dataset.filter;
+
+                    // Update the active button style
+                    filterButtons.forEach(function (item) {
+                        item.classList.remove("active");
+                        item.setAttribute("aria-pressed", "false");
+                    });
+
+                    button.classList.add("active");
+                    button.setAttribute("aria-pressed", "true");
+
+                    // Display matching satellite cards
+                    filterSatellites();
+                });
+
+                button.setAttribute(
+                    "aria-pressed",
+                    button.classList.contains("active") ? "true" : "false"
+                );
+            });
+
+            // Show all satellites when the page first loads
+            filterSatellites();
+        });
+    </script>
+</body>
+
+</html>

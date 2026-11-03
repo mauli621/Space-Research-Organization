@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asteroids & Comets</title>
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/asteroids.css" />
+</head>
+
+<body>
+    <div id="header"></div>
+    <main class="ast-page">
+
+        <section class="ast-hero">
+            <p class="ast-tag">SOLAR SYSTEM EXPLORATION</p>
+            <h1>Asteroids <span>&amp; Comets</span></h1>
+            <p>
+                Discover near-Earth objects, explore their characteristics,
+                and follow their close approaches to Earth.
+            </p>
+        </section>
+
+        <section class="ast-intro">
+            <h2>Small Objects, Big Discoveries</h2>
+            <p>
+                Asteroids are rocky or metallic objects, while comets contain
+                ice, dust, and rocky material. Both travel around the Sun.
+                Scientists study them to understand how our solar system formed.
+            </p>
+        </section>
+
+
+        <section class="ast-types">
+            <div class="ast-type">
+                <img src="/Images/asteroid-bennu.jpg"
+                    alt="Asteroid Bennu in space">
+                <h3>Asteroids</h3>
+                <p>Rocky objects orbiting the Sun.</p>
+            </div>
+
+            <div class="ast-type">
+                <img src="/Images/comet-neowise.jpg" alt="Comet in space">
+                <h3>Comets</h3>
+                <p>Icy bodies that can develop glowing tails.</p>
+            </div>
+        </section>
+
+        <section class="ast-objects" id="near-earth">
+            <div class="ast-section-head">
+                <div>
+                    <p class="ast-tag">LIVE DATA</p>
+                    <h2>Near-Earth Objects</h2>
+                    <p>Explore asteroids approaching Earth's neighborhood.</p>
+                </div>
+
+                <button class="ast-btn" id="reloadBtn" type="button">
+                    ↻ Refresh
+                </button>
+            </div>
+
+            <div class="ast-search">
+                <input type="search" id="searchInput" placeholder="Search object name..."
+                    aria-label="Search near-Earth objects">
+
+                <select id="objectFilter" aria-label="Filter objects">
+                    <option value="all">All objects</option>
+                    <option value="hazardous">Potentially hazardous</option>
+                    <option value="safe">Not flagged hazardous</option>
+                </select>
+            </div>
+
+            <p class="ast-status" id="dataStatus" aria-live="polite">
+                Loading near-Earth object data...
+            </p>
+
+            <div class="ast-grid" id="objectList"></div>
+        </section>
+
+
+    </main>
+    <div id="footer"></div>
+    <script src="./JS/asteroids.js"></script>
+    <script src="./JS/components.js"></script>
+</body>
+
+</html>

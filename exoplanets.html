@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" />
+    <title>Exoplanets | COSMOS</title>
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/exoplanets.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <section class="exo-hero" id="exo-home">
+      <video
+        class="exo-hero-video"
+        autoplay
+        muted
+        loop
+        playsinline
+        poster="./Images/e.mp4"
+      ></video>
+
+      <div class="exo-hero-content">
+        <p class="exo-small-title">EXPLORE THE UNIVERSE</p>
+
+        <h1>Other Worlds.<br /></h1>
+
+        <p class="exo-hero-text">
+          Exoplanets are planets that orbit stars outside our solar system. They
+          come in different sizes, shapes, and conditions. Some may have
+          conditions suitable for life. Explore these distant worlds and
+          discover the mysteries of our universe.
+        </p>
+
+        <div class="exo-buttons">
+          <a href="#exo-planets" class="exo-button exo-button-blue">
+            Explore Planets →
+          </a>
+
+          <button class="exo-button exo-button-outline" id="exo-open-video">
+            ▶ Watch Video
+          </button>
+        </div>
+
+        <p class="exo-hero-note">BEYOND EARTH. BEYOND IMAGINATION.</p>
+      </div>
+    </section>
+
+    <!-- About Exoplanets -->
+    <section class="exo-about exo-section" id="exo-about">
+      <div class="exo-about-content">
+        <p class="exo-small-title">ABOUT EXOPLANETS</p>
+
+        <h2>What Are <span>Exoplanets?</span></h2>
+
+        <p>
+          An exoplanet is a planet located outside our solar system. Instead of
+          orbiting our Sun, it travels around another star.
+        </p>
+
+        <p>
+          Some exoplanets are rocky like Earth, while others are enormous gas
+          giants. Scientists study them to learn how planets form and whether
+          other worlds could support life.
+        </p>
+
+        <a
+          href="https://science.nasa.gov/exoplanets/"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="exo-link"
+        >
+          Learn more from NASA →
+        </a>
+
+        <div class="exo-about-points">
+          <div>
+            <span class="exo-point-icon">✦</span>
+            <h3>Different Sizes</h3>
+            <p>From small rocky planets to giant worlds.</p>
+          </div>
+
+          <div>
+            <span class="exo-point-icon">◉</span>
+            <h3>Distant Stars</h3>
+            <p>They orbit stars beyond our solar system.</p>
+          </div>
+
+          <div>
+            <span class="exo-point-icon">✧</span>
+            <h3>Possibility of Life</h3>
+            <p>Scientists search for potentially habitable worlds.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="exo-about-image">
+        <img src="./Images/exoplanets.jpg " loading="lazy" />
+
+        <div class="exo-image-text">A UNIVERSE FULL OF POSSIBILITIES</div>
+      </div>
+    </section>
+
+    <!-- Featured Exoplanets -->
+    <section class="exo-planets exo-section" id="exo-planets">
+      <div class="exo-section-title">
+        <p class="exo-small-title">EXPLORE DISTANT WORLDS</p>
+
+        <h2>Amazing <span>Exoplanets</span></h2>
+
+        <p>Meet fascinating planets discovered beyond our Sun.</p>
+      </div>
+
+      <!-- Planet filters -->
+      <div class="exo-filters">
+        <button class="exo-filter active" data-filter="all">All Planets</button>
+        <button class="exo-filter" data-filter="rocky">Rocky Worlds</button>
+        <button class="exo-filter" data-filter="giant">Gas Giants</button>
+        <button class="exo-filter" data-filter="hot">Hot Worlds</button>
+      </div>
+
+      <div class="exo-planet-list">
+        <article class="exo-planet-card" data-type="rocky">
+          <div class="exo-planet-image">
+            <img src="./Images/exo1.jpg" loading="lazy" />
+            <span class="exo-planet-label">ROCKY WORLD</span>
+          </div>
+
+          <div class="exo-planet-info">
+            <h3>Proxima Centauri b</h3>
+            <p class="exo-distance">About 4.24 light-years away</p>
+            <p>
+              One of the closest known exoplanets. It orbits within its star's
+              habitable zone, but its actual conditions remain uncertain.
+            </p>
+            <a
+              href="https://science.nasa.gov/exoplanets/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="exo-link"
+            >
+              Discover more →
+            </a>
+          </div>
+        </article>
+
+        <article class="exo-planet-card" data-type="rocky">
+          <div class="exo-planet-image">
+            <img src="./Images/exo2.jpg" loading="lazy" />
+            <span class="exo-planet-label">EARTH-SIZED</span>
+          </div>
+
+          <div class="exo-planet-info">
+            <h3>TRAPPIST-1e</h3>
+            <p class="exo-distance">About 40 light-years away</p>
+            <p>
+              A roughly Earth-sized planet in the TRAPPIST-1 system. Scientists
+              are investigating its atmosphere.
+            </p>
+            <a
+              href="https://science.nasa.gov/exoplanets/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="exo-link"
+            >
+              Discover more →
+            </a>
+          </div>
+        </article>
+
+        <article class="exo-planet-card" data-type="giant">
+          <div class="exo-planet-image">
+            <img src="./Images/exo3.jpg" loading="lazy" />
+            <span class="exo-planet-label">GAS GIANT</span>
+          </div>
+
+          <div class="exo-planet-info">
+            <h3>51 Pegasi b</h3>
+            <p class="exo-distance">About 50 light-years away</p>
+            <p>
+              Discovered in 1995, this planet helped transform the search for
+              planets around Sun-like stars.
+            </p>
+            <a
+              href="https://science.nasa.gov/exoplanets/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="exo-link"
+            >
+              Discover more →
+            </a>
+          </div>
+        </article>
+
+        <article class="exo-planet-card" data-type="hot">
+          <div class="exo-planet-image">
+            <img src="./Images/exo4.jpg" loading="lazy" />
+            <span class="exo-planet-label">HOT WORLD</span>
+          </div>
+
+          <div class="exo-planet-info">
+            <h3>WASP-12b</h3>
+            <p class="exo-distance">Roughly 1,400 light-years away</p>
+            <p>
+              A hot Jupiter that orbits very close to its star, exposing it to
+              extreme temperatures.
+            </p>
+            <a
+              href="https://science.nasa.gov/exoplanets/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="exo-link"
+            >
+              Discover more →
+            </a>
+          </div>
+        </article>
+      </div>
+
+      <p class="exo-image-note">
+        Planet pictures are artistic visuals, not actual photographs of these
+        distant worlds.
+      </p>
+    </section>
+
+    <!-- Space video banner -->
+    <section class="exo-video-section">
+      <img src="./Images/sky.jpg" class="exo-video-background" loading="lazy" />
+
+      <div class="exo-video-dark"></div>
+
+      <div class="exo-video-content">
+        <p class="exo-small-title">THE JOURNEY CONTINUES</p>
+
+        <h2>The Universe Is <span>Full of Mysteries</span></h2>
+
+        <p>
+          Every discovery brings us closer to understanding our place in the
+          cosmos.
+        </p>
+
+        <button class="exo-button exo-button-blue" id="exo-open-video-bottom">
+          ▶ Watch Space Video
+        </button>
+      </div>
+    </section>
+
+    <!-- Video popup -->
+    <div class="exo-video-popup" id="exo-video-popup" aria-hidden="true">
+      <div
+        class="exo-video-box"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Space video"
+      >
+        <button
+          class="exo-close-video"
+          id="exo-close-video"
+          aria-label="Close video"
+        >
+          ✕
+        </button>
+
+        <video id="exo-space-video" controls playsinline preload="none">
+          <source src="./Images/e.mp4" type="video/mp4" />
+          Your browser does not support video.
+        </video>
+      </div>
+    </div>
+
+    <div id="footer"></div>
+
+    <script src="js/components.js"></script>
+    <script src="js/exoplanets.js"></script>
+  </body>
+</html>

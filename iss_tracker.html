@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS-Tracker</title>
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/iss_tracker.css" />
+</head>
+
+<body>
+    <div id="header"></div>
+   
+
+    <main class="iss-page">
+        <section class="iss-hero">
+            <span class="iss-eyebrow">LIVE SPACE TRACKING</span>
+            <h1>International Space Station</h1>
+            <p>
+                Follow humanity's orbiting laboratory as it travels
+                around Earth. View its current position and orbital data.
+            </p>
+
+            <div class="iss-status">
+                <span class="status-dot"></span>
+                <span id="connectionStatus">Connecting to ISS data...</span>
+            </div>
+        </section>
+
+        <section class="iss-section">
+            <div class="iss-section-title">
+                <div>
+                    <span class="iss-eyebrow">REAL-TIME POSITION</span>
+                    <h2>Where is the ISS now?</h2>
+                    <p>Explore the map and follow the station's reported location.</p>
+                </div>
+                <button id="refreshButton" class="iss-refresh" type="button">
+                    ↻ Refresh location
+                </button>
+            </div>
+
+            <div class="iss-map-layout">
+                <div class="iss-map-card">
+                    <div id="issMap" aria-label="Interactive map showing the ISS location"></div>
+                    <div class="map-footer">
+                        <span><span class="map-dot"></span> ISS current position</span>
+                        <span id="mapUpdated">Waiting for location...</span>
+                    </div>
+                </div>
+
+                <div class="iss-data-column">
+                    <article class="iss-data-card">
+                        <span class="data-label">LATITUDE</span>
+                        <strong id="latitude">--</strong>
+                        <span class="data-unit">Degrees</span>
+                    </article>
+
+                    <article class="iss-data-card">
+                        <span class="data-label">LONGITUDE</span>
+                        <strong id="longitude">--</strong>
+                        <span class="data-unit">Degrees</span>
+                    </article>
+
+                    <article class="iss-data-card">
+                        <span class="data-label">ALTITUDE</span>
+                        <strong><span id="altitude">--</span> <small>km</small></strong>
+                        <span class="data-unit">Above mean sea level</span>
+                    </article>
+
+                    <article class="iss-data-card">
+                        <span class="data-label">ORBITAL SPEED</span>
+                        <strong><span id="velocity">--</span> <small>km/h</small></strong>
+                        <span class="data-unit">Reported orbital velocity</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="iss-section">
+            <span class="iss-eyebrow">TRACKING INFORMATION</span>
+            <h2>Mission at a glance</h2>
+
+            <div class="iss-info-grid">
+                <article class="iss-info-card">
+                    <span class="info-icon">◉</span>
+                    <h3>Current visibility</h3>
+                    <p id="visibility">Waiting for data...</p>
+                    <span class="info-note">Illumination condition reported by the API</span>
+                </article>
+
+                <article class="iss-info-card">
+                    <span class="info-icon">⌁</span>
+                    <h3>Ground footprint</h3>
+                    <p><strong id="footprint">--</strong> <small>km</small></p>
+                    <span class="info-note">Approximate surface span visible from the ISS</span>
+                </article>
+
+                <article class="iss-info-card">
+                    <span class="info-icon">◷</span>
+                    <h3>Last data update</h3>
+                    <p id="lastUpdate">Waiting for data...</p>
+                    <span class="info-note">Time reported with the latest position</span>
+                </article>
+
+                <article class="iss-info-card">
+                    <span class="info-icon">↻</span>
+                    <h3>Tracking frequency</h3>
+                    <p>Every 5 seconds</p>
+                    <span class="info-note">Automatic position refresh</span>
+                </article>
+            </div>
+        </section>
+
+        <section class="iss-about">
+            <span class="iss-eyebrow">ABOUT THE STATION</span>
+            <h2>A laboratory orbiting Earth</h2>
+            <p>
+                The International Space Station (ISS) is a habitable research
+                laboratory in low Earth orbit. Astronauts from partner
+                countries live and work aboard it, conducting experiments
+                in biology, physics, Earth observation and space technology.
+            </p>
+            <div class="iss-facts">
+                <div><strong>~90 min</strong><span>Approximate time per orbit</span></div>
+                <div><strong>~28,000 km/h</strong><span>Typical orbital speed</span></div>
+                <div><strong>Low Earth orbit</strong><span>Its orbital region</span></div>
+            </div>
+            <p class="iss-disclaimer">
+                Live values depend on the data provider and may be delayed or
+                temporarily unavailable. Approximate facts are educational.
+            </p>
+        </section>
+        
+    </main>
+     <div id="footer"></div>
+     <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+     <script src="./JS/iss_tracker.js"></script>
+    <script src="./JS/components.js"></script>
+</body>
+
+</html>

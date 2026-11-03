@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Space Data Lab | COSMOS</title>
+
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/space-data-lab.css" />
+  </head>
+  <body>
+    <!-- Shared header -->
+    <div id="header"></div>
+
+    <!-- Hero -->
+    <section class="lab-hero">
+      <div class="lab-hero-content">
+        <p class="lab-label">EXPLORE · ANALYZE · DISCOVER</p>
+        <h1>Space <span>Data Lab</span></h1>
+        <h3>Real data. Real discoveries.</h3>
+        <p>
+          Explore planets, discover cosmic patterns, and learn from space data.
+        </p>
+        <a href="#lab-data" class="lab-button">Start Exploring →</a>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section class="lab-features">
+      <h2>What You Can Do</h2>
+      <div class="lab-title-line"></div>
+
+      <div class="lab-feature-list">
+        <article class="lab-feature-card">
+          <div class="lab-icon">▥</div>
+          <h3>View Real Data</h3>
+          <p>Explore space datasets and planet details.</p>
+        </article>
+
+        <article class="lab-feature-card">
+          <div class="lab-icon lab-purple">↗</div>
+          <h3>Visualize</h3>
+          <p>Understand data through simple charts.</p>
+        </article>
+
+        <article class="lab-feature-card">
+          <div class="lab-icon lab-green">↓</div>
+          <h3>Download</h3>
+          <p>Download sample data for your projects.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Sample dataset -->
+    <section class="lab-data" id="lab-data">
+      <div class="lab-data-content">
+        <p class="lab-label">SAMPLE DATA</p>
+        <h2>Explore a Dataset</h2>
+        <p>Compare sample exoplanet mass, radius, and distance from Earth.</p>
+
+        <button class="lab-button lab-outline" id="lab-download">
+          Download PDF ↓
+        </button>
+        <p class="lab-note">
+          Sample values for demonstration, not live measurements.
+        </p>
+      </div>
+
+      <div class="lab-data-card">
+        <div class="lab-table-wrap">
+          <table class="lab-table">
+            <thead>
+              <tr>
+                <th>Planet</th>
+                <th>Mass</th>
+                <th>Radius</th>
+                <th>Distance (ly)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kepler-22b</td>
+                <td>2.4</td>
+                <td>2.4</td>
+                <td>600</td>
+              </tr>
+              <tr>
+                <td>TRAPPIST-1e</td>
+                <td>0.8</td>
+                <td>0.9</td>
+                <td>39</td>
+              </tr>
+              <tr>
+                <td>HD 209458 b</td>
+                <td>0.7</td>
+                <td>1.4</td>
+                <td>159</td>
+              </tr>
+              <tr>
+                <td>K2-18b</td>
+                <td>8.6</td>
+                <td>2.6</td>
+                <td>124</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="lab-chart-heading">Planet mass comparison</div>
+        <canvas
+          id="lab-chart"
+          aria-label="Bar chart comparing sample planet masses"
+        ></canvas>
+      </div>
+    </section>
+
+    <!-- Shared footer -->
+    <div id="footer"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+    <script src="js/components.js"></script>
+    <script src="js/space-data-lab.js"></script>
+  </body>
+</html>

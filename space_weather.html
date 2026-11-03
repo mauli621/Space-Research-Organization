@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space-Weather</title>
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./CSS/space_weather.css" />
+</head>
+<body>
+    <div id="header"></div>
+
+        <main class="sw">
+
+        <section class="hero">
+            <h1>Space Weather</h1>
+            <p>Discover solar flares, geomagnetic storms and colourful auroras.</p>
+        </section>
+
+        <section class="topics">
+
+            <article class="card">
+                <img src="https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_0193.jpg"
+                     alt="The Sun">
+                <div class="info">
+                    <span class="tag">01 / THE SUN</span>
+                    <h2>Solar Flares</h2>
+                    <p>Powerful bursts of energy from the Sun that can affect radio signals and spacecraft.</p>
+                    <a href="https://science.nasa.gov/sun/solar-flares/"
+                       target="_blank" rel="noopener">Explore ↗</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1462331940025-496dfbfc7564?auto=format&fit=crop&w=1000&q=80"
+                     alt="Cosmic clouds">
+                <div class="info">
+                    <span class="tag">02 / EARTH</span>
+                    <h2>Geomagnetic Storms</h2>
+                    <p>Solar activity can disturb Earth's magnetic field and affect technology.</p>
+                    <a href="https://www.spaceweather.gov/"
+                       target="_blank" rel="noopener">Explore ↗</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <img src="https://images.unsplash.com/photo-1531366936337-7c912a4589a7?auto=format&fit=crop&w=1000&q=80"
+                     alt="Green aurora in the night sky">
+                <div class="info">
+                    <span class="tag">03 / SOLAR WIND</span>
+                    <h2>Solar Wind & Auroras</h2>
+                    <p>Particles from the Sun interact with Earth's atmosphere to create glowing auroras.</p>
+                    <a href="https://www.swpc.noaa.gov/phenomena/aurora"
+                       target="_blank" rel="noopener">Explore ↗</a>
+                </div>
+            </article>
+
+        </section>
+
+        <section class="video">
+            <div>
+                <p class="tag">WATCH THE SUN</p>
+                <h2>Solar Activity</h2>
+                <p>Watch NASA footage of a powerful solar flare.</p>
+                <a class="btn"
+                   href="https://science.nasa.gov/resource/major-solar-flare/"
+                   target="_blank" rel="noopener">Watch NASA Video ↗</a>
+            </div>
+
+            <img src="https://sdo.gsfc.nasa.gov/assets/img/latest/latest_1024_0193.jpg"
+                 alt="Solar activity">
+        </section>
+
+        <section class="alerts" id="alerts">
+            <div class="ahead">
+                <div>
+                    <p class="tag">NOAA SPACE WEATHER</p>
+                    <h2>Space Weather Alerts</h2>
+                    <p>Recent alerts, watches and warnings.</p>
+                </div>
+
+                <button id="refreshAlerts" class="btn" type="button">
+                    ↻ Refresh
+                </button>
+            </div>
+
+            <p id="alertStatus" aria-live="polite">Loading alerts...</p>
+            <div id="alertList" class="alist"></div>
+
+            <a class="link"
+               href="https://www.spaceweather.gov/products/alerts-watches-and-warnings"
+               target="_blank" rel="noopener">Official NOAA Alerts ↗</a>
+        </section>
+
+        <section class="note">
+            <h2>Why does space weather matter?</h2>
+            <p>Strong solar activity can affect satellites, GPS, radio communications and power systems.</p>
+        </section>
+
+    </main>
+
+     <div id="footer"></div>
+    <script src="./JS/space_weather.js"></script>
+    <script src="./JS/components.js"></script>
+</body>
+</html>

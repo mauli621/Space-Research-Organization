@@ -1,0 +1,194 @@
+
+/* Main page */
+.mis-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px 56px;
+}
+
+/* Page title */
+.mis-title {
+  font-size: clamp(2rem, 6vw, 3rem);
+  margin: 0 0 4px;
+  font-weight: 400;
+}
+
+.mis-sub {
+  margin: 0 0 32px;
+  color: #a9b0dd;
+  max-width: 65ch;
+  line-height: 1.6;
+}
+
+/* Sections */
+.mis-section {
+  margin-bottom: 40px;
+}
+
+.mis-heading {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.mis-text {
+  margin: 0 0 24px;
+  max-width: 70ch;
+  line-height: 1.7;
+  color: #a9b0dd;
+}
+
+/* Mission cards */
+.mis-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  align-items: stretch;
+}
+
+.mis-card {
+  background: #182050;
+  border: 1px solid #2c3772;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.mis-card:hover {
+  transform: translateY(-4px);
+  border-color: #ffb629;
+}
+
+/* Card image */
+.mis-img {
+  display: block;
+  width: 100%;
+  height: 195px;
+  object-fit: cover;
+  background: #060a22;
+}
+
+/* Card content */
+.mis-info {
+  padding: 14px 16px 16px;
+}
+
+.mis-date {
+  color: #ffb629;
+  font-size: 0.78rem;
+  margin: 0 0 8px;
+}
+
+.mis-info h3 {
+  font-size: 1.35rem;
+  font-weight: 400;
+  margin: 0 0 4px;
+}
+
+.mis-type {
+  color: #a9b0dd;
+  font-size: 0.85rem;
+  margin: 0 0 12px;
+}
+
+.mis-desc {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin: 0 0 16px;
+  min-height: 86px;
+}
+
+/* Mission details */
+.mis-facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px 12px;
+  margin-bottom: 16px;
+}
+
+.mis-fact {
+  border-left: 2px solid #ffb629;
+  padding-left: 8px;
+  min-width: 0;
+}
+
+.mis-fact span {
+  display: block;
+  color: #a9b0dd;
+  font-size: 0.78rem;
+  margin-bottom: 4px;
+}
+
+.mis-fact strong {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 400;
+  overflow-wrap: anywhere;
+}
+
+/* Links */
+.mis-link {
+  color: #ffb629;
+  font-size: 0.9rem;
+  text-decoration: none;
+}
+
+.mis-link:hover {
+  text-decoration: underline;
+}
+
+.mis-link:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 3px;
+}
+
+/* Bottom section */
+.mis-end {
+  background: #182050;
+  border: 1px solid #2c3772;
+  border-radius: 10px;
+  padding: 24px;
+  text-align: center;
+}
+
+.mis-end h2 {
+  margin: 0 0 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.mis-end p {
+  color: #a9b0dd;
+  line-height: 1.7;
+  margin: 0 0 18px;
+}
+
+/* Tablet */
+@media (max-width: 800px) {
+  .mis-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 540px) {
+  .mis-page {
+    padding: 20px 14px 40px;
+  }
+
+  .mis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mis-img {
+    height: 220px;
+  }
+
+  .mis-desc {
+    min-height: 0;
+  }
+
+  .mis-end {
+    padding: 20px 14px;
+  }
+}

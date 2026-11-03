@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About & Contact | COSMOS</title>
+
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./CSS/about_contact.css" />
+  </head>
+
+  <body>
+    <div id="header"></div>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+      <h1>Explore Beyond <span>Earth</span></h1>
+
+      <p>
+        Discover our mission, explore the wonders of the universe, and connect
+        with COSMOS — your gateway to space science.
+      </p>
+
+      <a href="#about" class="about-button">Discover COSMOS</a>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="about-heading">
+        <h2>About COSMOS</h2>
+        <p>Discover the universe through knowledge and exploration.</p>
+      </div>
+
+      <div class="about-description">
+        <p>
+          COSMOS is a space research and educational website created to make the
+          wonders of the universe easier to explore. We bring together
+          information about planets, astronomy, space missions, Earth
+          observation, and scientific discoveries.
+        </p>
+
+        <p>
+          Our goal is to inspire students, researchers, and space enthusiasts to
+          learn about space and develop curiosity about the universe.
+        </p>
+      </div>
+
+      <div class="about-cards">
+        <div class="about-card">
+          <h3>Our Mission</h3>
+          <p>
+            Make space science accessible through simple, informative, and
+            engaging educational content.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>Our Vision</h3>
+          <p>
+            Inspire the next generation to explore space, understand science,
+            and imagine new possibilities.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>What We Explore</h3>
+          <p>
+            Discover planets, space missions, astronomy, Earth observation, and
+            scientific research.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="about-contact-section" id="contact">
+      <div class="about-heading">
+        <h2>Contact Us</h2>
+        <p>Have a question or suggestion? We would love to hear from you.</p>
+      </div>
+
+      <div class="about-contact-container">
+        <div class="about-contact-info">
+          <h3>Get in Touch</h3>
+
+          <p>
+            <strong>Organization:</strong><br />
+            COSMOS — Space Research Organization
+          </p>
+
+          <p>
+            <strong>Email:</strong><br />
+            cosmos.space@example.com
+          </p>
+
+          <p>
+            <strong>Interested in:</strong><br />
+            Space Science, Research, Education, and Collaboration
+          </p>
+
+          <p>
+            Explore the universe with us and share your ideas to make learning
+            about space more exciting.
+          </p>
+        </div>
+
+        <form class="about-contact-form" id="contactForm">
+          <h3>Send a Message</h3>
+
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            placeholder="Enter your full name"
+            required
+          />
+
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+
+          <label for="subject">Subject</label>
+          <select id="subject" required>
+            <option value="">Select a subject</option>
+            <option value="Space Research">Space Research</option>
+            <option value="Education">Educational Resources</option>
+            <option value="Feedback">Website Feedback</option>
+            <option value="Collaboration">Collaboration</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <label for="userMessage">Your Message</label>
+          <textarea
+            id="userMessage"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+
+          <button type="submit" class="about-button">Send Message</button>
+
+          <p id="about-form-message" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <!-- Shared Header and Footer -->
+    <script src="./js/components.js"></script>
+
+    <!-- Contact Form Validation -->
+    <script src="./js/about_contact.js"></script>
+  </body>
+</html>

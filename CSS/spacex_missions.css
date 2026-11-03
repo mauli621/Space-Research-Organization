@@ -1,0 +1,193 @@
+
+/* SpaceX Missions Page */
+
+.spx-page {
+    background: #050917;
+    color: #ffffff;
+    padding: 24px 0 40px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.spx-head,
+.spx-section {
+    max-width: 940px;
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.spx-head {
+    margin-bottom: 30px;
+}
+
+.spx-title {
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0 0 6px;
+    color: #ffffff;
+}
+
+.spx-sub {
+    color: #c3cbe3;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 570px;
+    margin: 0;
+}
+
+.spx-section-title {
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0 0 10px;
+}
+
+.spx-section-sub {
+    color: #c3cbe3;
+    font-size: 15px;
+    line-height: 1.7;
+    max-width: 600px;
+    margin: 0 0 25px;
+}
+
+.spx-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    align-items: stretch;
+}
+
+.spx-card {
+    min-width: 0;
+    background: #1a2453;
+    border: 1px solid #303d78;
+    border-radius: 11px;
+    overflow: hidden;
+    transition: border-color 0.25s, transform 0.25s;
+}
+
+.spx-card:hover {
+    border-color: #ffb629;
+    transform: translateY(-3px);
+}
+
+.spx-img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    display: block;
+    background: #10162d;
+}
+
+.spx-info {
+    padding: 13px 15px 16px;
+}
+
+.spx-date {
+    color: #ffb629;
+    font-size: 12px;
+    margin: 0 0 7px;
+}
+
+.spx-info h3 {
+    color: #ffffff;
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0 0 5px;
+}
+
+.spx-type {
+    color: #bdc9ed;
+    font-size: 13px;
+    margin: 0 0 12px;
+}
+
+.spx-desc {
+    color: #ffffff;
+    font-size: 13.5px;
+    line-height: 1.65;
+    margin: 0 0 24px;
+    min-height: 88px;
+}
+
+.spx-details {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 10px 8px;
+    margin-bottom: 16px;
+}
+
+.spx-detail {
+    min-width: 0;
+    border-left: 2px solid #ffb629;
+    padding-left: 8px;
+}
+
+.spx-detail span {
+    display: block;
+    color: #bdc9ed;
+    font-size: 12px;
+    margin-bottom: 3px;
+}
+
+.spx-detail strong {
+    display: block;
+    color: #ffffff;
+    font-size: 12.5px;
+    font-weight: 400;
+    line-height: 1.45;
+    overflow-wrap: anywhere;
+}
+
+.spx-link {
+    display: inline-block;
+    color: #ffb629;
+    text-decoration: none;
+    font-size: 13.5px;
+    margin-top: 1px;
+}
+
+.spx-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Tablet */
+@media (max-width: 850px) {
+    .spx-head,
+    .spx-section {
+        max-width: 700px;
+    }
+
+    .spx-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .spx-title {
+        font-size: 40px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 550px) {
+    .spx-page {
+        padding-top: 22px;
+    }
+
+    .spx-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .spx-title {
+        font-size: 34px;
+    }
+
+    .spx-img {
+        height: 210px;
+    }
+
+    .spx-desc {
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+}
